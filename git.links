@@ -1,2 +1,7 @@
-https://aur.archlinux.org/yaourt.git
-https://aur.archlinux.org/package-query-git.git
+# Comments (# ) require a space
+# aur - fetch package by name from AUR
+# url - fetch package by url from a http(s) git repo
+
+# Example using package-query-git
+# aur package-query-git
+url https://aur.archlinux.org/package-query.git

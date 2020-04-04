@@ -1,8 +1,9 @@
 
 
 build:
-	./git_build_packages.sh && ./init_custom_repo.sh
+	./git_build_packages.sh
 
 clean:
-	./clean.sh
+	yes | rm -r */
+
 
