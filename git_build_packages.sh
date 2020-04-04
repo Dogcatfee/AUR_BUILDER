@@ -1,13 +1,7 @@
 #!/bin/bash
 
 
-repo_dir=./aur_repo_x86_64
-if [ "$1" != "" ]; then
-    echo "Placing AUR repo at $1"
-    repo_dir=$1
-else
-    echo "Using default directory"
-fi
+repo_dir=./x86_64
 
 #Remove all directories
 yes | rm -r $(echo */)
