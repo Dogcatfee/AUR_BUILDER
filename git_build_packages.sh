@@ -12,10 +12,14 @@ fi
 #Remove all directories
 yes | rm -r $(echo */)
 
+python3 links_gen.py > pkg_links
+
 #Clone repos listed in git.links file
 while read repo; do
   git clone "$repo"
-done < git.links
+done < pkg_links
+
+rm pkg_links
 
 #Build all packages
 for package in $(echo */); do
