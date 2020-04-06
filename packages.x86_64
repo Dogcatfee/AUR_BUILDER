@@ -1,4 +1,11 @@
+#!/bin/bash
+
 ddgr
-#jetbrains-toolbox
-#windscribe-cli
-#zoom
+windscribe-cli
+
+# pycharm-professional
+python-xdg
+sublime-text-dev
+
+# zoom
+# blenderZ
