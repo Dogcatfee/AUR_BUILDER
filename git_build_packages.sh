@@ -3,12 +3,12 @@
 basedir=$( cd `dirname $0`; pwd )
 
 aget () {
-  yes | rm -r $1
-  git clone https://aur.archlinux.org/"$1".git
-  # curl -fO https://aur.archlinux.org/cgit/aur.git/snapshot/"$1".tar.gz
-  cd $1
-  makepkg -s
-  cd ..
+    yes | rm -r $1
+    git clone https://aur.archlinux.org/"$1".git
+    # curl -fO https://aur.archlinux.org/cgit/aur.git/snapshot/"$1".tar.gz
+    cd $1
+    makepkg -s
+    cd ..
 }
 
 
@@ -32,5 +32,5 @@ done
 
 mkdir $repo_dir
 for package in $(find -name "*.pkg.tar.xz"); do
-  mv "$package" $repo_dir
+    mv "$package" $repo_dir
 done
