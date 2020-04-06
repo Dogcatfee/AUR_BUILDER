@@ -11,12 +11,11 @@ fi
 
 cd $repo_dir
 
-#repo-add ./custom.db.tar.gz ./*
 repo-add -R $1.db.tar.gz *.pkg.tar.xz
 repo-add -R $1.db.tar.gz *.pkg.tar.zst
 
-rm custom.db
-cp -f $1.db.tar.gz custom.db
+rm $1.db
+cp -f $1.db.tar.gz $1.db
 
 rm *gz.old
 
