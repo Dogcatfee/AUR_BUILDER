@@ -11,8 +11,8 @@ fi
 
 cd $repo_dir
 
-repo-add -R $1.db.tar.gz *.pkg.tar.xz
-repo-add -R $1.db.tar.gz *.pkg.tar.zst
+repo-add -s -R $1.db.tar.gz *.pkg.tar.xz
+repo-add -s -R $1.db.tar.gz *.pkg.tar.zst
 
 rm $1.db
 cp -f $1.db.tar.gz $1.db
