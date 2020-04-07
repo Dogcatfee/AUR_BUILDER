@@ -23,6 +23,7 @@ else
 fi
 
 list=`grep -v '^#' ./packages.x86_64`
+echo $list
 
 for pkg in $list; do
     if [[ ! -d $pkg ]]; then
