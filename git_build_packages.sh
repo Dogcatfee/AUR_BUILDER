@@ -1,5 +1,7 @@
 #!/bin/bash
 
+source defines.sh
+
 basedir=$( cd `dirname $0`; pwd )
 
 aget () {
